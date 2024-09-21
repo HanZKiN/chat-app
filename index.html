@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Chat App</h1>
+      <div id="chat-window"></div>
+      <div id="preview" style="color: #aaa; margin: 10px 0"></div>
+      <div style="position: relative; display: flex; align-items: center">
+        <span id="emoji" style="font-size: 24px; margin-right: 8px">😊</span>
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type a message..."
+          style="padding-right: 80px"
+        />
+        <span
+          id="camera-icon"
+          style="
+            position: absolute;
+            right: 110px;
+            cursor: pointer;
+            font-size: 24px;
+          "
+          >📷</span
+        >
+        <span
+          id="mic-icon"
+          style="
+            position: absolute;
+            right: 75px;
+            cursor: pointer;
+            font-size: 24px;
+          "
+          >🎤</span
+        >
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
